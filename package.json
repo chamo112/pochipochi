@@ -6,9 +6,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "lint:fix": "next lint --fix",
+    "typecheck": "tsc --noEmit",
+    "type-check": "tsc --noEmit",
+    "check": "pnpm run typecheck && pnpm run lint",
+    "clean": "rm -rf .next out node_modules/.cache",
+    "test": "echo \"Warning: no test specified\" && exit 0"
   },
-  "packageManager": "pnpm@latest",
+  "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=22.16.0"
   },
@@ -21,6 +26,8 @@
   "devDependencies": {
     "@types/node": "^24.0.2",
     "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6"
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.29.0",
+    "eslint-config-next": "^15.3.3"
   }
 }
