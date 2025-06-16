@@ -2,14 +2,25 @@
   "name": "pochipochi",
   "version": "0.1.0",
   "scripts": {
-    "dev": "echo 'Development server not configured yet'",
-    "build": "echo 'Build command not configured yet'",
-    "test": "echo 'Test command not configured yet'",
-    "lint": "echo 'Lint command not configured yet'",
-    "typecheck": "echo 'Typecheck command not configured yet'"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
   },
   "packageManager": "pnpm@latest",
   "engines": {
     "node": ">=22.16.0"
+  },
+  "dependencies": {
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.2",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6"
   }
 }
