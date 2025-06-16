@@ -8,15 +8,24 @@
 
 ## 現在の状態
 
-リポジトリは基本設定のみで初期化されています：
+リポジトリは基本設定で初期化されています：
 - Git リポジトリのセットアップ完了
 - Node.js スタイルの .gitignore 設定済み
 - IntelliJ IDEA プロジェクトファイル存在
 - Claude Code 用設定を .gitignore に追加済み
+- Node.js バージョン管理用の mise 設定完了
 
 ## 開発セットアップ
 
-プロジェクトが初期段階のため、技術スタックとビルドコマンドはまだ確定していません。アプリケーション実装時、Node.js/Web プロジェクトの典型的なコマンドは以下の通りです：
+### 前提条件
+- [mise](https://mise.jdx.dev/) が Node.js バージョン管理のためにインストールされている必要があります
+
+### セットアップコマンド
+1. `mise install` - .mise.toml で指定された Node.js 22.16.0 をインストール
+2. `node --version` - Node.js のインストールを確認
+
+### 将来のビルドコマンド
+技術スタックが確定した後、Node.js/Web プロジェクトの典型的なコマンドは以下の通りです：
 
 - `npm install` または `yarn install` - 依存関係のインストール（package.json 作成後）
 - `npm run dev` または `yarn dev` - 開発サーバーの起動（設定後）

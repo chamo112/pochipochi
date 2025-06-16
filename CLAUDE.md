@@ -8,14 +8,23 @@ This is "pochipochi" (ポチポチ) - a Japanese household budget/expense tracki
 
 ## Current State
 
-The repository is newly initialized with only basic configuration:
+The repository is newly initialized with basic configuration:
 - Git repository setup 
 - Node.js-style .gitignore configured
 - IntelliJ IDEA project files present
+- mise configuration for Node.js version management
 
 ## Development Setup
 
-Since this project is in its initial phase, the technology stack and build commands are not yet established. When implementing the application, typical commands for a Node.js/web project would include:
+### Prerequisites
+- [mise](https://mise.jdx.dev/) must be installed for Node.js version management
+
+### Setup Commands
+1. `mise install` - Install Node.js 22.16.0 as specified in .mise.toml
+2. `node --version` - Verify Node.js installation
+
+### Future Build Commands
+Once the technology stack is established, typical commands for a Node.js/web project would include:
 
 - `npm install` or `yarn install` - Install dependencies (once package.json exists)
 - `npm run dev` or `yarn dev` - Start development server (once configured)
