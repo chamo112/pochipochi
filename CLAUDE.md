@@ -13,6 +13,7 @@ The repository is newly initialized with basic configuration:
 - Node.js-style .gitignore configured
 - IntelliJ IDEA project files present
 - mise configuration for Node.js version management
+- pnpm package manager configured
 
 ## Development Setup
 
@@ -20,16 +21,19 @@ The repository is newly initialized with basic configuration:
 - [mise](https://mise.jdx.dev/) must be installed for Node.js version management
 
 ### Setup Commands
-1. `mise install` - Install Node.js 22.16.0 as specified in .mise.toml
+1. `mise install` - Install Node.js 22.16.0 and pnpm as specified in .mise.toml
 2. `node --version` - Verify Node.js installation
+3. `pnpm --version` - Verify pnpm installation
 
-### Future Build Commands
-Once the technology stack is established, typical commands for a Node.js/web project would include:
+### Build Commands
+Current commands available:
 
-- `npm install` or `yarn install` - Install dependencies (once package.json exists)
-- `npm run dev` or `yarn dev` - Start development server (once configured)
-- `npm run build` or `yarn build` - Build for production (once configured)
-- `npm test` or `yarn test` - Run tests (once configured)
+- `pnpm install` - Install dependencies
+- `pnpm run dev` - Start development server (placeholder for now)
+- `pnpm run build` - Build for production (placeholder for now)
+- `pnpm run test` - Run tests (placeholder for now)
+- `pnpm run lint` - Run linting (placeholder for now)
+- `pnpm run typecheck` - Run type checking (placeholder for now)
 
 ## Project Context
 

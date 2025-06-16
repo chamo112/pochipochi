@@ -1,0 +1,15 @@
+{
+  "name": "pochipochi",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo 'Development server not configured yet'",
+    "build": "echo 'Build command not configured yet'",
+    "test": "echo 'Test command not configured yet'",
+    "lint": "echo 'Lint command not configured yet'",
+    "typecheck": "echo 'Typecheck command not configured yet'"
+  },
+  "packageManager": "pnpm@latest",
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}
